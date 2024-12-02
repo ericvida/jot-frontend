@@ -16,14 +16,14 @@ tag three-column-layout
 				<slot name='left'>
 			<button.toggle-btn @click=toggleLeft [flex-grow:0 flex-shrink:1]> 
 				# left-visible ? "←" : "→"
-				<svg src=PH.CARET_RIGHT [size:20px tween:all .2s ease]>
+				<svg src=PH.CARET_RIGHT>
 					if !left-visible
 						css rotate:180deg
 		<main>
 			<slot>
 		<aside.right>
 			<button.toggle-btn @click=toggleRight>
-				<svg src=PH.CARET_LEFT [size:20px tween:all .2s ease]>
+				<svg src=PH.CARET_LEFT>
 					if !right-visible
 						css rotate:180deg
 			<.content>
@@ -36,28 +36,41 @@ tag three-column-layout
 		d:flex
 		h:100vh
 		overflow:hidden
-		ml:-1sidebar
-		mr:-1sidebar
 		tween:all 1speed ease
+		w:calc(100vw + (2sidebar))
+		ml:-1sidebar
+		&.left-visible
+			ml:0
+			w:calc(100vw + (1sidebar))
+		&.right-visible
+			w:calc(100vw + (1sidebar))
+		&.right-visible.left-visible
+			ml:0
+			w:calc(100vw)
+		pos:relative
 		.toggle-btn
 			size:1iconsize
 			cursor:pointer
 			d:vtc
-			pt:1sp
-			bg:gray2
-			h:100%
-		&.left-visible
-			ml:0
-		&.right-visible
-			mr:0sidebar
-		main
-			flex-grow:0
+			# fls:0
+			bg:white @hover:gray2
+			of:hidden
+			svg
+				size:1iconsize
+				p:.3sp
+				>>> stroke:cool4
+					stroke-width:25px
+	css main
+			flex:1
+			min-w:0
 			p:2sp
-		aside
-			w:calc(1sidebar + 1iconsize)
-			flex-shrink:0
-			bg:cool0
+			of:auto
+	css aside
 			d:hflex
+			overflow:hidden
 			.content
+				overflow-y:auto
+				w:1sidebar
+				bg:cool0
 				p:2sp
 				flex-grow:1

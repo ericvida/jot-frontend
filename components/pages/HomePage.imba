@@ -1,8 +1,9 @@
 export tag HomePage
 	<self>
 		<three-column-layout>
-			<h1 slot="left"> "home page"
-			<div>
-				<h1> "main"
-				<p> "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
-			<h1 slot="right"> "home page"
+			<div slot="left">
+				<h1> "left" # replace this line with desired components
+			<div> 
+				<h1> "main" # replace this line with desired components
+			<div slot="right">
+				<h1> "right" # replace this line with desired components

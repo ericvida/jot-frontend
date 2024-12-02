@@ -8,3 +8,9 @@ global css
 		1sidebar: 300px
 		1iconsize: 30px
 		1speed: .5s
+		1rd: 5px
+	* 
+		box-sizing:border-box
+		tween: all 1speed ease
+	html
+		overflow:hidden
