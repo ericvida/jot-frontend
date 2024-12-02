@@ -1,0 +1,47 @@
+
+{
+  "input": "អង់គ្លេស",
+  "phonetic": "ȯgḳḷeh",
+  "types": [
+    {
+      "type": "noun",
+      "definitions": [
+        {
+          "bridge": "english language",
+          "examples": [
+            {
+                "input": "input_language example",
+                "phonetic": "phonetic_language example",
+                "bridge": "bridge_langauge example"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "adjective",
+      "definitions": [
+        {
+          "bridge": "english speaking",
+          "examples": [
+            {
+                "input": "input_language example",
+                "phonetic": "phonetic_language example",
+                "bridge": "bridge_langauge example"
+            }
+          ]
+        }
+        {
+          "bridge": "english nationality",
+          "examples": [
+            {
+                "input": "input_language example",
+                "phonetic": "phonetic_language example",
+                "bridge": "bridge_langauge example"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

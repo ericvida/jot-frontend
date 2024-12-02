@@ -1,0 +1,14 @@
+{
+  "name": "jot-frontend",
+  "scripts": {
+    "dev": "imba -w index.html",
+    "build": "imba build index.html",
+    "preview": "npx vite preview"
+  },
+  "devDependencies": {
+    "imba": "^2.0.0-alpha.238"
+  },
+  "dependencies": {
+    "imba-phosphor-icons": "^2.2.0"
+  }
+}
